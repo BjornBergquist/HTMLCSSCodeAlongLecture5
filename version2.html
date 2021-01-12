@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoMoreDucks - Tutorial Website </title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-customDark text-light">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-customLight fixed-top px-3 border-bottom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <i class="fas fa-skull" aria-hidden="true"></i> NoMoreDucks</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tutorials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Pricing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <header id="siteHeader" class="container-fluid text-center mt-5 p-3 border-bottom">
+        <div class="row">
+            <div class="col">
+                <h2>NoMoreDucks</h2>
+                <h1>Tutorial Website</h1>
+                <br>
+                <p> HTML, CSS & Bootstrap tutorials</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-3">
+        <!-- Lesson 5 -->
+        <article class="row mb-2">
+            <header class="col-12 text-center"><h2>HTML Lesson 5</h2></header>
+            <div class="col-12 col-lg-1 col-xl-2"></div>
+            <section class="col-12 col-lg-10 col-xl-8">
+                <h3>Section</h3>
+                <p>
+                    The section element defines a section in a document.
+
+                    According to W3C's HTML documentation: "A section is a thematic grouping of content, typically with a heading."
+                        
+                    A web page could normally be split into sections for introduction, content, and contact information.
+                </p>
+            </section> 
+            <div class="col-12 col-lg-1 col-xl-2"></div> 
+            <div class="col-12 col-lg-1 col-xl-2"></div>
+            <section class="col-12 col-lg-10 col-xl-8">
+                <h3>Article</h3>
+                <p>
+                    The article element specifies independent, self-contained content.
+
+                    An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site.
+                        
+                    Examples of where an article element can be used:
+                </p>
+                <ul>
+                    <li>Forum post</li>
+                    <li>Blog post</li>
+                    <li>Newspaper article</li>
+                </ul>
+            </section>
+            <div class="col-12 col-lg-1 col-xl-2"></div>
+            <div class="col-12 col-lg-1 col-xl-2"></div>
+            <section class="col-12 col-lg-10 col-xl-8">
+                <h3>The difference between sections and articles</h3>
+                <p>The article element specifies independent, self-contained content.
+
+                    The section element defines section in a document.
+                    
+                    Can we use the definitions to decide how to nest those elements? No, we cannot!
+                    
+                    So, you will find HTML pages with section> elements containing article> elements, and article elements containing section elements.</p>
+            </section>
+            <div class="col-12 col-lg-1 col-xl-2"></div>
+            <div class="col-12 col-lg-1 col-xl-2"></div>
+            <footer class="col-12 col-lg-10 col-xl-8">
+                <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" class="link-light">Source</a>
+            </footer>
+            <div class="col-12 col-lg-1 col-xl-2"></div>
+        </article>
+       
+        <!-- Carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide mb-2 glow" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+              <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/cityscape1.jpg" class="d-block w-100" alt="Cyberpunk Cityscape">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Learn HTML</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/cityscape2.jpg" class="d-block w-100" alt="Cyberpunk Cityscape">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Learn CSS</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/cityscape3.jpg" class="d-block w-100" alt="Cyberpunk Cityscape">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Learn Bootstrap</h5>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+
+          <!-- Section about CSS grid -->
+    </main>
+
+    <footer class="container-fluid bg-customLight p-2 border-top">
+        <div class="row">
+            <div class="col-12 col-lg-1 col-xl-2"></div>
+            <div class="col-12 col-lg-10 col-xl-8">
+                <h6> &copy; NoMoreDucks</h6>
+                <p>Please don't contact us at no@nomoreducks.mx, because we don't own that domain</p>
+            </div>
+            <div class="col-12 col-lg-1 col-xl-2"></div>
+        </div>
+    </footer>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</body>
+</html>
